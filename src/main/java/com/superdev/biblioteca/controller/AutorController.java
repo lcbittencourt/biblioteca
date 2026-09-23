@@ -27,6 +27,9 @@ public class AutorController {
     @DeleteMapping("/{id}")
     public Autor apagar (@PathVariable int id){return service.apagar(id);}
 
+    @PutMapping("/{id}/reativar")
+    public Autor reativar(@PathVariable int id){return service.reativar(id);}
+
     @GetMapping("/{id}")
     public Autor obterPorId(@PathVariable int id){return service.obterPorId(id);}
 }

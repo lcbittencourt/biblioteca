@@ -45,6 +45,13 @@ public class AutorService {
         return repository.save(autor);
     }
 
+    public Autor reativar(int id){
+        var autor = repository.findById(id).orElseThrow();
+
+        autor.setAtiva(true);
+        return repository.save(autor);
+    }
+
     public Autor obterPorId(int id){
         var autor = repository.findById(id).orElseThrow();
         return autor;

@@ -37,6 +37,11 @@ public class CategoriaController {
         return service.apagar(id);
     }
 
+    @PutMapping("/{id}/reativar")
+    public Categoria reativar(@PathVariable int id){
+        return service.reativar(id);
+    }
+
     @GetMapping("/{id}")
     public Categoria obterPorId(@PathVariable int id){
         return service.obterPorId(id);

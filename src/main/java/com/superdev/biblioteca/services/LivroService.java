@@ -76,6 +76,13 @@ public class LivroService {
         return repository.save(livro);
     }
 
+    public Livro reativar(int id){
+        var livro = repository.findById(id).orElseThrow();
+
+        livro.setAtivo(true);
+        return repository.save(livro);
+    }
+
     public Livro obterPorId(int id){
         var livro = repository.findById(id).orElseThrow();
 

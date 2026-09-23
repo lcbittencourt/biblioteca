@@ -46,6 +46,13 @@ public class CategoriaService {
         return repository.save(categoria);
     }
 
+    public Categoria reativar(int id){
+        var categoria = repository.findById(id).orElseThrow();
+
+        categoria.setAtiva(true);
+        return repository.save(categoria);
+    }
+
     public Categoria obterPorId(int id){
         var categoria = repository.findById(id).orElseThrow();
 

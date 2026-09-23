@@ -37,8 +37,20 @@ public class LeitorController {
         return service.apagar(id);
     }
 
+    @PutMapping("/{id}/reativar")
+    public Leitor reativar(@PathVariable int id){
+        return service.reativar(id);
+    }
+
     @GetMapping("/{id}")
     public Leitor obterPorId(@PathVariable int id){
         return service.obterPorId(id);
+    }
+
+    @GetMapping("/codigo/{codigo}")
+    public Leitor obterPorCodigo(
+            @PathVariable String codigo
+    ){
+        return service.obterPorCodigo(codigo);
     }
 }

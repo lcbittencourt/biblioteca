@@ -20,6 +20,9 @@ public class Leitor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(length = 9, unique = true)
+    private String codigo;
+
     @Column(length = 100, nullable = false)
     private String nome;
 

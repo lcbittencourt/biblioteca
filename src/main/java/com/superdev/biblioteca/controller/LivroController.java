@@ -37,6 +37,11 @@ public class LivroController {
         return service.apagar(id);
     }
 
+    @PutMapping("/{id}/reativar")
+    public Livro reativar(@PathVariable int id){
+        return service.reativar(id);
+    }
+
     @GetMapping("/{id}")
     public Livro obterPorId(@PathVariable int id){
         return service.obterPorId(id);
