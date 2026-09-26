@@ -18,10 +18,13 @@ public class Livro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 150, nullable = false, unique = true)
+    @Column(length = 150, nullable = false)
     private String titulo;
 
-    @Column(length = 14, nullable = false, unique = true)
+    @Column (length = 150)
+    private String subtitulo;
+
+    @Column(length = 14, nullable = false)
     private String isbn;
 
     @Column(nullable = false)

@@ -40,6 +40,7 @@ public class LivroService {
 
         var livro = Livro.builder()
                 .titulo(dado.titulo())
+                .subtitulo(dado.subtitulo())
                 .isbn(dado.isbn())
                 .anoPublicacao(dado.anoPublicacao())
                 .quantidade(dado.quantidade())
@@ -59,6 +60,7 @@ public class LivroService {
                 .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
 
         livro.setTitulo(dado.titulo());
+        livro.setSubtitulo(dado.subtitulo());
         livro.setIsbn(dado.isbn());
         livro.setAnoPublicacao(dado.anoPublicacao());
         livro.setQuantidade(dado.quantidade());

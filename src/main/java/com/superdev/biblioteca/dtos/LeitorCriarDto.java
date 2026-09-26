@@ -14,6 +14,9 @@ public record LeitorCriarDto(
         @NotNull @Past
         LocalDate dataNascimento,
 
+        @NotBlank @Size(min = 5, max = 100)
+        String email,
+
         @NotBlank @Size(min = 13, max = 14)
         String numeroTelefone,
 

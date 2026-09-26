@@ -28,6 +28,7 @@ public class LeitorService {
                 .nome(dado.nome())
                 .cpf(dado.cpf())
                 .dataNascimento(dado.dataNascimento())
+                .email(dado.email())
                 .numeroTelefone(dado.numeroTelefone())
                 .rua(dado.rua())
                 .numeroCasa(dado.numeroCasa())
@@ -65,6 +66,7 @@ public class LeitorService {
         leitor.setNome(dado.nome());
         leitor.setCpf(dado.cpf());
         leitor.setDataNascimento(dado.dataNascimento());
+        leitor.setEmail(dado.email());
         leitor.setNumeroTelefone(dado.numeroTelefone());
         leitor.setRua(dado.rua());
         leitor.setNumeroCasa(dado.numeroCasa());

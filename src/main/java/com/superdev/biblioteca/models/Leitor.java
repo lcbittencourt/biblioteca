@@ -32,6 +32,9 @@ public class Leitor {
     @Column(name = "data_nascimento", nullable = false)
     private LocalDate dataNascimento;
 
+    @Column(length = 100, nullable = false)
+    private String email;
+
     @Column(length = 14, nullable = false)
     private String numeroTelefone;
 

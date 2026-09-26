@@ -6,6 +6,9 @@ public record LivroCriarDto(
         @NotBlank @Size(min = 1, max = 150)
         String titulo,
 
+        @Size(min = 1, max = 150)
+        String subtitulo,
+
         @NotBlank @Size(min = 10, max = 14)
         String isbn,
 

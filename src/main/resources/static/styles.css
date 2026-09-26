@@ -13,3 +13,59 @@ main{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:48px 0 80px}.scre
 @media(max-width:600px){.topbar{height:70px;padding:0 18px}.brand small{display:none}main{width:min(100% - 24px,1180px);padding-top:28px}.hero{min-height:330px}.hero-copy h1{font-size:46px}.hero-copy p{font-size:16px}.home-grid{gap:12px}.feature-card{grid-template-columns:auto 1fr;padding:20px}.feature-arrow{display:none}.feature-content strong{font-size:25px}.quick-stats{grid-template-columns:1fr}.quick-stats article{border-right:0;border-bottom:1px solid var(--line);display:flex}.module-grid{grid-template-columns:1fr}.module-card{min-height:220px}.page-heading h1,.workspace-heading h1,.crud-heading h1{font-size:42px}.page-heading.centered .back-button{position:static}.choice-card{min-height:350px;padding:27px}.workspace-heading{align-items:flex-start;gap:20px;flex-direction:column}.form-grid{grid-template-columns:1fr}.input-action,.reader-search{flex-direction:column}.panel{padding:21px}.crud-layout{display:block}.crud-form{margin-bottom:18px}.crud-heading{margin-bottom:20px}.quick-stats{margin-top:25px}.topbar-actions{gap:5px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 .record-code{display:inline-flex;align-items:center;padding:6px 9px;border-radius:9px;background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;font-weight:800;letter-spacing:.04em;white-space:nowrap}
+.contact-email{color:var(--primary);font-size:12px;font-weight:700;overflow-wrap:anywhere;margin-bottom:3px}.crud-form input[type="email"]{padding-right:42px;background-image:linear-gradient(transparent,transparent)}
+
+/* Área útil mais ampla em todas as páginas */
+.topbar{padding-left:max(18px,2.25vw);padding-right:max(18px,2.25vw)}
+main{width:min(1600px,calc(100% - 32px))}
+.crud-layout{grid-template-columns:minmax(360px,420px) minmax(0,1fr);gap:24px}
+.action-choice{max-width:1100px}
+.page-heading{max-width:900px}
+.reader-search{width:min(680px,60%)}
+.table-wrap table{min-width:820px}
+
+@media(max-width:900px){
+    main{width:min(100% - 24px,1600px)}
+    .crud-layout{grid-template-columns:1fr}
+    .reader-search{width:100%}
+}
+
+@media(max-width:600px){
+    main{width:min(100% - 18px,1600px)}
+    .topbar{padding-left:12px;padding-right:12px}
+    .table-wrap table{min-width:700px}
+}
+
+.phone-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.whatsapp-button{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:8px;background:color-mix(in srgb,#25d366 17%,transparent);color:#20a950;text-decoration:none;font-size:10px;font-weight:800;transition:.2s;white-space:nowrap}.whatsapp-button svg{width:15px;height:15px;fill:currentColor;flex:0 0 auto}.whatsapp-button:hover{transform:translateY(-1px);background:#25d366;color:#092f1a}.reader-details-backdrop{position:fixed;inset:0;background:rgba(9,15,12,.58);backdrop-filter:blur(7px);display:grid;place-items:center;z-index:110;opacity:0;visibility:hidden;transition:.3s}.reader-details-backdrop.open{opacity:1;visibility:visible}.reader-details{position:relative;width:min(720px,calc(100% - 32px));max-height:88vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:var(--shadow);transform:translateY(18px) scale(.97);transition:.35s var(--ease)}.reader-details-backdrop.open .reader-details{transform:none}.reader-details-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding-bottom:22px;border-bottom:1px solid var(--line)}.reader-details-heading h2{font-family:"Fraunces",serif;font-size:34px;margin:12px 0 3px}.reader-details-heading p{color:var(--muted);margin:0}.details-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:22px}.details-grid>div{padding:16px;border:1px solid var(--line);background:var(--bg);border-radius:14px}.details-grid small,.details-grid strong{display:block}.details-grid small{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}.details-grid strong{font-size:13px}.detail-address{grid-column:1/-1}.detail-break{overflow-wrap:anywhere}@media(max-width:600px){.details-grid{grid-template-columns:1fr}.detail-address{grid-column:1}.reader-details{padding:24px}.row-actions{flex-wrap:wrap}}
+.whatsapp-button{width:30px;height:30px;display:inline-grid;place-items:center;padding:0;border-radius:9px;gap:0}.whatsapp-button span{display:none}.whatsapp-button svg{width:17px;height:17px}
+
+/* Alinhamento equilibrado da listagem de autores */
+#screen-autores .table-wrap table{table-layout:fixed}
+#screen-autores .table-wrap th,#screen-autores .table-wrap td{text-align:center;vertical-align:middle}
+#screen-autores .table-wrap th:nth-child(1){width:14%}
+#screen-autores .table-wrap th:nth-child(2){width:30%}
+#screen-autores .table-wrap th:nth-child(3){width:22%}
+#screen-autores .table-wrap th:nth-child(4){width:34%}
+#screen-autores .row-actions{justify-content:center}
+
+/* Alinhamento equilibrado da listagem de livros */
+#screen-livros .table-wrap table{table-layout:fixed}
+#screen-livros .table-wrap th,#screen-livros .table-wrap td{text-align:center;vertical-align:middle}
+#screen-livros .table-wrap th:nth-child(1){width:9%}
+#screen-livros .table-wrap th:nth-child(2){width:25%}
+#screen-livros .table-wrap th:nth-child(3){width:18%}
+#screen-livros .table-wrap th:nth-child(4){width:12%}
+#screen-livros .table-wrap th:nth-child(5){width:13%}
+#screen-livros .table-wrap th:nth-child(6){width:23%}
+#screen-livros .row-actions{justify-content:center}
+.book-subtitle{max-width:100%;margin-top:5px;color:var(--muted);font-size:11px;font-weight:500;line-height:1.35;overflow-wrap:anywhere}
+#screen-livros .crud-list{min-width:0}
+#screen-livros .table-wrap{width:100%;margin-left:0;margin-right:0;overflow-x:hidden}
+#screen-livros .table-wrap table{width:100%;min-width:0}
+#screen-livros .table-wrap th,#screen-livros .table-wrap td{overflow-wrap:anywhere}
+#screen-livros .row-actions{flex-wrap:wrap}
+
+@media(max-width:700px){
+    #screen-livros .table-wrap{overflow-x:auto}
+    #screen-livros .table-wrap table{min-width:720px}
+}
